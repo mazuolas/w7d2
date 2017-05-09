@@ -8,12 +8,10 @@ class StepForm extends React.Component{
     this.titleChange = this.titleChange.bind(this);
     this.bodyChange = this.bodyChange.bind(this);
   }
-  submitForm(e){
 
+  submitForm(e){
     e.preventDefault();
-    this.props.addstep(this.state).then(() => (
-      this.setState({ title: "", body: ""})
-    )).then(this.props.clearErrors());
+    this.props.receiveStep(this.state);
   }
 
   titleChange(e){

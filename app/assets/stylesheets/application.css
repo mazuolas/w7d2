@@ -15,7 +15,7 @@
  */
 
  body {
-   background: lightblue;
+   background-image: url('/assets/images.jpg');
    font-family: sans-serif;
  }
 
@@ -30,6 +30,7 @@
 }
 
 h1{
+  color: white;
   display: flex;
   justify-content: center;
 }
