@@ -34,6 +34,11 @@ h1{
   justify-content: center;
 }
 
+ul {
+  margin: 0 auto;
+  width: 50%;
+}
+
 li {
   background-color: white;
   list-style: none;
@@ -49,7 +54,7 @@ li {
 }
 
 .todoForm{
-  width: 30%;
+  width: 20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -66,6 +71,10 @@ li {
   padding-left: 20px;
 }
 
+button {
+  cursor: pointer;
+}
+
 #body, #title{
   margin-bottom: 10px;
 }
@@ -79,4 +88,19 @@ li {
   background-color: lightgreen;
   font-weight: bolder;
   font-size: 20px;
+}
+
+.step-form {
+  height: 200px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#step-body, #step-title, .step-button {
+  width: 50%;
+
+  margin: 10px auto;
 }

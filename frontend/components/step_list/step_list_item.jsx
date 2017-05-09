@@ -13,6 +13,11 @@ class StepListItem extends React.Component{
 
   }
 
+  deleteStep(e){
+    e.preventDefault();
+
+  }
+
 
   render(){
     if (this.props.step.done) {
@@ -22,13 +27,16 @@ class StepListItem extends React.Component{
     }
 
     return(
-      <li>{this.props.step.title}
-          <br/>
-          {this.props.step.body}
-          <br/>
-          <button onClick={this.updateStatus}>{this.text}</button>
-          <button onClick={this.deleteStep}>Delete</button>
+      <li>
+        {this.props.step.title}
+        <br/>
+        {this.props.step.body}
+        <br/>
+        <button onClick={this.updateStatus}>{this.text}</button>
+        <button onClick={this.deleteStep}>Delete</button>
       </li>
     );
   }
 }
+
+export default StepListItem;

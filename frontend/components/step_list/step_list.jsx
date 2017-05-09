@@ -9,12 +9,13 @@ class StepList extends React.Component{
   }
 
   render(){
+    console.log(this.props);
     return(
       <div>
 
         <ul>
           {this.props.steps.map((step) => (
-            <StepListItem key={step.id} step={step} />
+            <StepListItemContainer />
           ))}
         </ul>
         <StepForm receiveStep={this.props.receiveStep}/>
