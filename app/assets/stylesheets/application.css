@@ -13,3 +13,70 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+   background: lightblue;
+   font-family: sans-serif;
+ }
+
+.error {
+  color: red;
+  font-weight: bolder;
+}
+
+.todo{
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  background-color: white;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid teal;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoForm{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.delete-button{
+  color: white;
+  font-weight: bolder;
+  background-color: red;
+}
+
+.item > h3 {
+  padding-left: 20px;
+}
+
+#body, #title{
+  margin-bottom: 10px;
+}
+
+.form-button {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.done-button {
+  background-color: lightgreen;
+  font-weight: bolder;
+  font-size: 20px;
+}
